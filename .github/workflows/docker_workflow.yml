@@ -1,8 +1,8 @@
 name: docker_workflow
-on:
-  push:
-    paths:
-      - 'docker/Dockerfile'
+on: push
+  #  push:
+    #    paths:
+      #      - 'docker/Dockerfile'
 jobs:
   docker:
     permissions: write-all
