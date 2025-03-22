@@ -45,5 +45,5 @@ jobs:
     - name: create pull request
       id: create_pull_request
       run: gh pr create -t "docker_merge" -b "docker merge to master" -B "master"
-      with:
+      env:
         GH_TOKEN: ${{ github.token }}
